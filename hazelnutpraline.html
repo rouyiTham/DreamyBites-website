@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Hazelnut Praline
+    </title>
+    <link rel="stylesheet" href="CSS/cake.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Radley">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="cake_carousel.js"></script>   
+    <link rel="icon" href="album/DreamyBites_logo.svg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="header_logo" src="album/DreamyBites_logo.svg" alt="Dreamy Bites logo">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="howtoorder.html">How to Order</a></li>
+            <li><a href="FAQ_PRODUCT.html">FAQ</a></li>
+            <li><a data-open-modal class="contact_us">Contact Us</a></li>
+            <dialog data-modal class="modal">
+                <div class="title-grid">
+                    <h3>Reach us here</h3>
+                        
+                    <div class="btn_close">
+                        <button class="button_close" data-close-modal>X</button>
+                    </div>
+                </div>
+
+                <div class="name">
+                    <input type="text" placeholder="Name"
+                    id="name">           
+                </div>
+
+                <div class="email">
+                    <input type="email" placeholder="Email"
+                    id="email">           
+                </div>
+
+                <div class="message-box">
+                    <textarea placeholder="Message"id="message" cols="20" rows="8"></textarea>         
+                </div>
+
+                <div class="btn_send">
+                    <button class="button_send" id="send" onclick="message()">Send</button>
+                </div>
+
+                <div class="message">
+                    <div class="success" id="success">
+                        Your message was successfully sent!
+                    </div>
+
+                    <div class="warning" id="warning">
+                        Fields can't be empty!
+                    </div>            
+                </div>
+            </dialog>
+            
+            <li><a login-open-modal class="log_in">Log In</a></li>
+            <li><a id="logout">Log Out</a></li>
+            <dialog login-modal class="modal">
+    
+                <div class="wrap">
+                    <div class="close">
+                        <button class="button_close" login-close-modal>X</button>
+                    </div>
+    
+                    <div class="form-box login">
+                        <h3>Login</h3>
+                        <form action="#">
+                            <div class="input-box">
+                                <input type="email" required placeholder="Email">
+                            </div>
+                            <div class="input-box">
+                                <input type="password" required placeholder="Password">
+                            </div>
+                            <div class="remember-forgot">
+                                <label><input type="checkbox">Remember me</label>
+                                <a href="#" class="forgot-link">Forgot Password?</a>
+                            </div>
+                            
+                            <button type="submit" class="btn">Login</button>
+                            <div class="login-register">
+                                <p>Don't have an account?</p>
+                                <a href="#" class="register-link">Register</a>
+                            </div>
+                        </form>
+                    </div>
+    
+                    <div class="form-box register">
+                        <h3>Registration</h3>
+                        <form action="#">
+                            <div class="input-box">
+                                <input type="text" required placeholder="Username">
+                            </div>
+                            <div class="input-box">
+                                <input type="email" required placeholder="Email">
+                            </div>
+                            <div class="input-box">
+                                <input type="password" required placeholder="Password">
+                            </div>
+                            <div class="remember-forgot">
+                                <label><input type="checkbox">I agree to the terms & conditions</label>
+                            </div>
+                            <button type="submit" class="btn">Register</button>
+                            <div class="register_successful_msg">
+                                <p>Account registered successfully!</p>
+                            </div>
+                            <div class="login-register">
+                                <p>Already have an account?</p>
+                                <a href="#" class="login-link">Login</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </ul>
+    </nav>
+
+    <div class="first-container">
+        <div class="first-container-slider-wrapper">
+            <button class="slide-arrow slide-arrow-prev" onclick="plusDivs(-1)">
+                &#8249;
+            </button>
+            <button class="slide-arrow slide-arrow-next" onclick="plusDivs(+1)">
+                &#8250;
+            </button>
+            <div class="slides-container" id="slides-container">
+                <img class="slide" src="./Cake/Hazelnut Praline/6.svg">
+                <img class="slide" src="./Cake/Hazelnut Praline/7.svg">
+            </div>
+            <button class="productbutton"><a href="products.html">&mdash;&mdash;&mdash;&mdash;&nbsp; <b>PRODUCTS</b></a></button>
+        </div>  
+        <div class="first-container-info">
+            <p>
+                <h1>HAZELNUT PRALINE</h1>
+                Weight: 600g+
+                <br>Size: 6 inch
+                <br>Height: 1.7 inch
+                <br>Serving size: 6-8 servings
+            </p>
+
+            <br>
+            <div>
+                <div class="first-container-allergen">
+                    <h3>Allergens and Diet Restriction</h3>
+                    <div class="allergen-container">
+                        <div><img src="./Ingredient icon/boiled-egg.svg"><br>egg</div>
+                        <div><img src="./Ingredient icon/gluten.svg"><br>gluten</div>
+                        <div><img src="./Ingredient icon/gelatine.svg"><br>gelatine</div>
+                        <div><img src="./Ingredient icon/dairy-products.svg"><br>dairy</div>
+                        <div><img src="./Ingredient icon/hazelnut.svg"><br>hazelnut</div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="second-container">
+        <img src="album/doubleQuotation.svg">
+        <p>Enjoy our Dark Chocolate Mousse Cake for ultimate deliciousness. Layers of delicate Hazelnut Praline Feuilletine are encased in a velvety smooth dark chocolate mousse, producing a magnificent harmony of textures. Your taste buds will be mesmerised and eager for more as the bittersweet richness of dark chocolate wonderfully balances the crunchy hazelnut praline.
+        </p>
+    </div>
+
+    <div class="third-container">
+        <h2>Main Ingredients</h2>
+        <div class="third-container-icon">
+            <div><img src="./Ingredient icon/hazelnut.svg"><br>hazelnut</div>
+            <div><img src="./Ingredient icon/butter.svg"><br>butter</div>
+            <div><img src="./Ingredient icon/flour.svg"><br>flour</div>
+            <div><img src="./Ingredient icon/whip-cream.svg"><br>whipping cream</div>
+            <div><img src="./Ingredient icon/sugar.svg"><br>sugar</div>
+            <div><img src="./Ingredient icon/baking-soda-2.svg"><br>baking soda</div>
+            <div><img src="./Ingredient icon/baking-soda.svg"><br>baking powder</div>
+            <div><img src="./Ingredient icon/dark-chocolate.svg"><br>dark chocolate</div>
+            <div><img src="./Ingredient icon/salt.svg"><br>salt</div>
+            <div><img src="./Ingredient icon/gelatine.svg"><br>gelatine</div>
+            <div><img src="./Ingredient icon/milk.svg"><br>milk</div>
+            <div><img src="./Ingredient icon/boiled-egg.svg"><br>egg</div>
+            <div><img src="./Ingredient icon/cocoa.svg"><br>cocoa</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer_shop">
+                <h3>SHOP</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="howtoorder.html">How to Order</a></li>
+                    <li><a href="FAQ_PRODUCT.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>CONTACT</h3>
+                <ul class="info">
+                    <li>
+                    <img src="album/whatsapp.svg" class="icon"><span>012-3456789</span>
+                    </li>
+                    <li>
+                    <img src="album/instagram.svg" class="icon"><span>dreamybites</span>
+                    </li>
+                    <li>
+                    <img src="album/mail.svg" class="icon"><span>dreamybites@yummy.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <h3>DON'T MISS OUT!!!</h3>
+                <p>Subscribe us for update on new product launches and special promotion.</p>
+                <br>
+                <input type="text" placeholder="Enter your email">
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <small>&copy; 2023 Dreamy Bites</small>
+    </div>
+
+    <script src="CONTACT.js"></script>
+    
+</body>
+</html>

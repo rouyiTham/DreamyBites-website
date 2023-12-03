@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <link rel="icon" href="album/DreamyBites_logo.svg">
+        <link rel="stylesheet" href="CSS/faq_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Radley&family=Raleway&display=swap" rel="stylesheet">
+        <title>FAQ EXCHANGE & REFUND</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <img class="header_logo" src="album/DreamyBites_logo.svg" alt="Dreamy Bites logo">
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="howtoorder.html">How to Order</a></li>
+                <li><a href="FAQ_PRODUCT.html">FAQ</a></li>
+                <li><a data-open-modal class="contact_us">Contact Us</a></li>
+                <dialog data-modal class="modal">
+                    <div class="title-grid">
+                        <h3>Reach us here</h3>
+                            
+                        <div class="btn_close">
+                            <button class="button_close" data-close-modal>X</button>
+                        </div>
+                    </div>
+
+                    <div class="name">
+                        <input type="text" placeholder="Name"
+                        id="name">           
+                    </div>
+
+                    <div class="email">
+                        <input type="email" placeholder="Email"
+                        id="email">           
+                    </div>
+
+                    <div class="message-box">
+                        <textarea placeholder="Message"id="message" cols="20" rows="8"></textarea>         
+                    </div>
+
+                    <div class="btn_send">
+                        <button class="button_send" id="send" onclick="message()">Send</button>
+                    </div>
+
+                    <div class="message">
+                        <div class="success" id="success">
+                            Your message was successfully sent!
+                        </div>
+
+                        <div class="warning" id="warning">
+                            Fields can't be empty!
+                        </div>            
+                    </div>
+                </dialog>
+                
+                <li><a login-open-modal class="log_in">Log In</a></li>
+                <li><a id="logout">Log Out</a></li>
+                <dialog login-modal class="modal">
+        
+                    <div class="wrap">
+                        <div class="close">
+                            <button class="button_close" login-close-modal>X</button>
+                        </div>
+        
+                        <div class="form-box login">
+                            <h3>Login</h3>
+                            <form action="#">
+                                <div class="input-box">
+                                    <input type="email" required placeholder="Email">
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" required placeholder="Password">
+                                </div>
+                                <div class="remember-forgot">
+                                    <label><input type="checkbox">Remember me</label>
+                                    <a href="#" class="forgot-link">Forgot Password?</a>
+                                </div>
+                                
+                                <button type="submit" class="btn">Login</button>
+                                <div class="login-register">
+                                    <p>Don't have an account?</p>
+                                    <a href="#" class="register-link">Register</a>
+                                </div>
+                            </form>
+                        </div>
+        
+                        <div class="form-box register">
+                            <h3>Registration</h3>
+                            <form action="#">
+                                <div class="input-box">
+                                    <input type="text" required placeholder="Username">
+                                </div>
+                                <div class="input-box">
+                                    <input type="email" required placeholder="Email">
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" required placeholder="Password">
+                                </div>
+                                <div class="remember-forgot">
+                                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                                </div>
+                                <button type="submit" class="btn">Register</button>
+                                <div class="register_successful_msg">
+                                    <p>Account registered successfully!</p>
+                                </div>
+                                <div class="login-register">
+                                    <p>Already have an account?</p>
+                                    <a href="#" class="login-link">Login</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
+            </ul>
+        </nav>
+
+        <h2>FAQ! Need Help?</h2>
+        <h2>We've got you covered</h2>
+
+        <div class="button-grid">
+            <button id="btn_product">
+                <div class="button-icon">
+                    <img src="album/cake.svg">
+                </div>
+                <p>Products</p>
+            </button>
+
+            <button id="btn_order">
+                <div class="button-icon">
+                    <img id="orderpic" src="album/shopping-cart.svg">
+                </div>                   
+                <p>Order</p>
+            </button>
+
+            <button id="btn_delivery">
+                <div class="button-icon">
+                    <img src="album/shipped.svg">
+                </div>                    
+                <p>Delivery</p>
+            </button>
+
+            <button id="btn_exchange&refund">
+                <div class="button-icon">
+                    <img src="album/return.svg">
+                </div>
+                <p>Exchange & Refund</p>
+                </button>
+        </div>
+                
+        <br>
+        <section>
+            <h2 class="title">ORDER:</h2>
+                <div class="faq">
+                    <div class="question">
+                        <img id="commentpic" src="album/comment.svg">
+                        <h2>How do I place my order?</h2>
+                        <img class="next" src="album/next.svg">  
+                    </div>
+
+                    <div class="answer">
+                        <p>You may place your order on either Whatsapp or Instagram. Refer <a href="howtoorder.html">here</a> for more information.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <img id="commentpic" src="album/comment.svg">
+                        <h2>What are the accepted payment methods?</h2>
+                        <img class="next" src="album/next.svg">  
+                    </div>
+
+                    <div class="answer">
+                        <p>We currently only accept online banking as a payment method. The banking information will be provided to you when you place your order on WhatsApp.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <img id="commentpic" src="album/comment.svg">
+                        <h2>How do I collect my cake?</h2>
+                        <img class="next" src="album/next.svg">   
+                    </div>
+
+                    <div class="answer">
+                        <p>You can choose to pick up your order from our bakery during our regular business hours.<br>
+                            Location: 23, Jalan PJS 11/9, Bandar Sunway, 46150 Petaling Jaya, Selangor</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <img id="commentpic" src="album/comment.svg">
+                        <h2>How will I know when my order is ready for pickup?</h2>
+                        <img class="next" src="album/next.svg">    
+                    </div>
+
+                    <div class="answer">
+                        <p>On the day your order is due for collection, you will receive a Whatsapp text message informing you that it is ready for pickup.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <img id="commentpic" src="album/comment.svg">
+                        <h2>Can I come pickup earlier/later/anytime?</h2>
+                        <img class="next" src="album/next.svg">   
+                    </div>
+
+                    <div class="answer">
+                        <p>Once you receive a notification that your order is ready, you are welcome to pick it up whenever our store is open.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="question">
+                        <img id="commentpic" src="album/comment.svg">
+                        <h2>Does my order come with knife and candles?</h2>
+                        <img class="next" src="album/next.svg">  
+                    </div>
+
+                    <div class="answer">
+                        <p>Yes, if you haven't specified how many candles you'd like, every cake order includes a cake knife and a candle.</p>
+                    </div>
+                </div>
+            </section>
+
+
+        <footer>
+            <div class="container">
+                <div class="footer_shop">
+                    <h3>SHOP</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="howtoorder.html">How to Order</a></li>
+                        <li><a href="FAQ_PRODUCT.html">FAQ</a></li>
+
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h3>CONTACT</h3>
+                    <ul class="info">
+                        <li>
+                        <img src="album/whatsapp.svg" class="icon"><span>012-3456789</span>
+                        </li>
+                        <li>
+                        <img src="album/instagram.svg" class="icon"><span>dreamybites</span>
+                        </li>
+                        <li>
+                        <img src="album/mail.svg" class="icon"><span>dreamybites@yummy.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <h3>DON'T MISS OUT!!!</h3>
+                    <p>Subscribe us for update on new product launches and special promotion.</p>
+                    <br>
+                    <input type="text" placeholder="Enter your email">
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyright">
+            <p>&copy; 2023 Dreamy Bites</p>
+        </div>
+        
+
+        <script src="./FAQ.js"></script>
+        <script src="./CONTACT.js"></script>
+
+    </body>
+</html>
