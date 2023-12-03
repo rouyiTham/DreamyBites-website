@@ -1,0 +1,800 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFBF5;
+    width:100%;
+    max-width: auto;
+}
+
+/*header*/
+.header{
+    display: flex;
+    height: fit-content;
+    background: #E1F2FF;
+    align-items: center;
+    background-image: url(../album/clouds.gif);
+    background-repeat: repeat-x;
+    background-position-y: -82px;
+}
+
+.header_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 250px;
+}
+
+/*nav*/
+nav ul{
+    list-style: none;
+    background: #9fC1D4;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Radley', 'Sans Serif';
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    color: #050A30;
+    width: 150px;
+    display: block;
+    padding: 10px;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav a:hover{
+    color: #FFFFFF;
+}
+
+
+/* Contact Us Dialog CSS */
+h3{
+    font-size: 1.5em;
+    margin:15px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.name{
+    width: 100%;
+    position: relative;
+    margin-bottom:15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.name input{
+    width: 90%;
+    padding: 20px;
+    border:none;
+    outline:none;
+    font-size: 1.2em;
+    background-color: #eee;
+    font-family: 'Raleway', sans-serif;
+}
+
+.name input::placeholder{
+    color:#bbb;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.email{
+    width: 100%;
+    position: relative;
+    margin-bottom:15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.email input{
+    width: 90%;
+    padding:20px;
+    border:none;
+    outline:none;
+    font-size: 1.2em;
+    background-color: #eee;
+    font-family: 'Raleway', sans-serif;
+}
+
+.email input::placeholder{
+    color:#bbb;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.message-box{
+    width: 90%;
+    position: relative;
+    margin-bottom:15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.message-box textarea{
+    width: 100%;
+    padding:20px;
+    border:none;
+    outline:none;
+    font-size: 1.2em;
+    background-color: #eee;
+    resize: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.message-box textarea input::placeholder{
+    color:#bbb;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn_send{
+    width:100%;
+    cursor:pointer;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn_send button{
+    width: 100%;
+    padding:10px;
+    font-size:1.2em;
+    color:black;
+    background-color: #FEBCC8;
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn_send:hover, .btn_close:hover{
+    filter: brightness(90%);    
+}
+
+.btn_close{
+    width: auto;
+    cursor:pointer;
+    margin-top: 8px;
+    margin-left:80px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button_close{
+    height:40px;
+    width: 100%;
+    font-size:1.2em;
+    font-weight: bold;
+    color:#fff;
+    background-color: red;
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button_send{
+    height:40px;
+    width: 100%;
+    font-size:1.2em;
+    font-weight: bold;
+    color:#fff;
+    background-color: red;
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.title-grid{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding:0;
+}
+
+
+.message{
+    width:100%;
+    position:relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.message .success{
+    font-size: 1.5em;
+    color:green;
+    position: absolute;
+    animation: buttons .3s linear;
+    display:none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.message .warning{
+    font-size: 1.5em;
+    color:red;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display:none;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+@keyframes buttons{
+    0%{
+        transform:scale(0,1);
+    }
+    50%{
+        transform:scale(0,5);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+.modal{
+    width:500px;
+    height:600px;
+    position: fixed;
+    padding:0.5em;
+    border-radius: 0.25rem;
+    z-index: 10;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.contact_us{
+    cursor: pointer;
+}
+
+/* FAQ Page CSS */
+h2{
+    text-align: center;
+    font-family: 'Inknut Antiqua', sans-serif;
+}
+
+.title{
+    text-align: left;
+    font-size: 2em;
+}
+
+
+img{
+    width:50px;
+    height:auto;
+}
+
+#orderpic{
+    width: 55px;
+    height:auto;
+}
+
+button{
+    width:230px;
+    height:150px;
+    border-radius: 30px;
+    font-size: large;
+    background-color: #FEBCC8;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.button-grid{
+    display:grid;
+    width: 550px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    place-items:center;
+    row-gap: 30px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+button p{
+    margin: 5px 0 0 0 ;
+}
+
+button:hover{
+    filter: brightness(.75);
+    box-shadow: 0 15px 20px 0 rgb(34,60,80,0.16);
+    cursor:pointer;
+}
+
+section{
+    margin:0 10px;
+    min-height: 100vh;
+    width:1200px;
+    display: flex;
+    flex-direction:column;    
+    font-family: 'Raleway', sans-serif;
+}
+
+section h2{
+    font-family: 'Raleway', 'sans-serif';
+}
+.faq{
+    max-width:1200px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    cursor:pointer;
+}   
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer p{
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+.faq.active .answer{
+    max-height: 300px;
+    animation:fade 0.5s ease-in-out;
+}
+
+.faq.active .next{
+    transform:rotate(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+    
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* Login & Register Dialog CSS */
+.log_in{
+    cursor:pointer;
+}
+
+#logout{
+    display: none;
+    cursor: pointer;
+}
+
+
+.wrap {
+    position: relative;
+    width: 500px;
+    height: 545px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Radley';
+    overflow: hidden;
+    transform: scale(0);
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrap.active-popup {
+    transform: scale(1);
+}
+
+.wrap.active {
+    height: 600px;
+}
+
+.wrap .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrap .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrap.active .form-box.login {
+    transition: none;
+    transform: translateX(-500px);
+}
+
+.wrap .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(500px);
+}
+
+.wrap.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrap .close {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    height:40px;
+    width: 40px;
+    font-size:1.2em;
+    font-weight: bold;
+    color:#fff;
+    background-color: red;
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-box h3 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    margin:30px 30px 30px 0;
+    
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .3s;
+    
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline:none;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 20px 0 5px;
+    background-color:#eee;
+    
+}
+
+.remember-forgot {
+    font-size: 0.9em;
+    margin: -15px 0 15px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.remember-forgot .forgot-link{
+    font-size: 0.9em;
+    color: black;
+    text-decoration: none;
+    margin-top:-5px;
+}
+
+
+.remember-forgot label input {
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 95%;
+    height: 45px;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    margin-left: -20px;
+}
+
+.login-register {
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0;
+    text-align: center;
+}
+
+.login-register .register-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+    font-size: 0.9em;
+}
+
+.login-register .register-link:hover {
+    text-decoration: underline;
+}
+
+.login-register .login-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display:inline;
+    font-size: 0.9em;
+}
+
+.login-register .login-link:hover{
+    text-decoration: underline;
+}
+
+.register_successful_msg{
+    color:green;
+    display: none;
+    font-weight: bold;
+}
+
+
+/*footer*/
+footer {
+    display: grid;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    background-color: #d4def6;
+    font-family: 'Radley', serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+footer h3 {
+    font-size: 1.2em;
+    font-family: 'Radley', serif;
+}
+
+footer p {
+    font-family: 'Radley';
+}
+
+
+.container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 250px 320px 300px;
+    column-gap: 20px;
+    padding-top: 50px;
+    padding-left: 180px;
+    font-size: 1.0em;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container h3 {
+    position: relative;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.footer_shop {
+    position: relative;
+    border-right: 2px solid black;
+    padding-left: 20px;
+    height: 200px;
+}
+.footer_shop ul{
+    padding-left: 0;
+}
+.footer_shop li {
+    list-style: none;
+}
+
+.footer_shop li a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer_shop li a:hover {
+    color: white;
+}
+
+.contact {
+    position: relative;
+    border-right: 2px solid black;
+    padding-left: 20px;
+    height: 200px;
+}
+
+.contact ul{
+    padding-left: 0;
+}
+
+.contact li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 15px;
+}
+
+.subscribe {
+    padding-left: 20px;
+    height: 200px;
+}
+
+.subscribe input {
+    height: 40px;
+    width: 70%;
+    outline: none;
+    border: 2px solid #797d88;
+    background: #d4def6;
+    border-radius: 10px;
+    padding: 0px 15px;
+    color: black;
+    font-family: 'Radley';
+}
+
+.subscribe input::placeholder{
+    color: #5d6068;
+    font-family: 'Radley';
+}
+
+.copyright {
+    width: auto;
+    background-color: #d4def6;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+
+/*for mobile*/
+@media screen and (max-width: 600px){
+
+    body{
+        font-size:0.8em;
+    }
+
+    img{
+        width:40px;
+        height:auto;
+        padding:5px;
+    }
+    
+    #orderpic{
+        width: 45px;
+        height:auto;
+        margin-right:8px;
+    }
+    
+    button{
+        width:180px;
+        height:120px;
+    }
+    
+
+    .header{
+        height: 130px;
+    }
+    .header_logo{
+        width: 200px;
+        height: 180px;
+    }
+
+    .button-grid{
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        width:auto;
+    }
+
+    h2 {
+        text-align: center; 
+        margin-left: 0;
+    }
+
+    section {
+        width:auto;
+    } 
+
+    nav li a{
+        width: 200px;
+        display: block;
+        font-size: 0.7em;
+        line-height: 0.7em;
+    }
+
+    footer .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1,100%);
+        width: 80%;
+        padding-left: 45px;
+    }
+
+    .footer_shop{
+        border-bottom: 2px solid black;
+        border-right:none;
+        padding-top:0;
+        padding-bottom:0;
+        padding-left:0;
+        height:fit-content;
+    }
+
+    footer .contact{
+        padding-left: 0;
+        border-right:none;
+        padding-top:10px;
+        padding-bottom:0px;
+        border-bottom: 2px solid black;
+        height:fit-content;
+    }
+
+    footer .subscribe{
+        padding-left: 0;
+        padding-top:10px;
+        padding-bottom:0;
+        height:fit-content;
+    }
+    
+
+}
+
+
+/*for tablet*/
+@media screen and (max-width: 1199px) and (min-width: 600px){
+
+    section{
+        width:auto;
+    }
+
+    nav a{
+        width: 100px;
+        font-size: 0.64em;
+    }
+
+    footer .container {
+        grid-template-columns: 140px 250px 180px;
+        column-gap: 20px;
+        width: 80%;
+        padding-left: 45px;
+    }
+
+    footer .contact{
+        padding-left: 0;
+    }
+
+    footer .subscribe{
+        padding-left: 0;
+    }
+}
+    

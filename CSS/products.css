@@ -1,0 +1,804 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: #FFFBF5;
+    font-family: 'Raleway';
+}
+.description{
+    background-color: #E1F2FF;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+h2{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-family: Suez One;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}                 
+p{
+    color: rgba(29, 28, 26, 0.70);
+    font-family: 'Raleway';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0.5px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;                
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 15px;
+}
+.container > div {
+    flex: 0 1 33%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 18px;
+    line-height: 25px;
+    transition: transform .2s;
+}
+.container > div > a{
+    text-decoration: none;
+}
+.container > div > a > img{
+    height: 250px;
+    width: 250px;
+}
+.container >div:hover {
+    transform: scale(1.2); 
+}
+
+.slogan{
+    font-weight: bolder;
+}
+
+/*header*/
+.header{
+    display: flex;
+    height: fit-content;
+    background: #E1F2FF;
+    align-items: center;
+    background-image: url(../album/clouds.gif);
+    background-repeat: repeat-x;
+    background-position-y: -82px;
+}
+.header_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 250px;
+}
+
+/*nav*/
+nav ul{
+    list-style: none;
+    background: #9fC1D4;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    font-family: 'Radley';
+    text-decoration: none;
+    color: #050A30;
+    width: 150px;
+    display: block;
+    padding: 10px;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav a:hover{
+    color: #FFFFFF;
+}
+
+/* Contact Us Dialog CSS */
+h3{
+    font-size: 1.5em;
+    margin:15px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.name{
+    width: 100%;
+    position: relative;
+    margin-bottom:15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.name input{
+    width: 90%;
+    padding: 20px;
+    border:none;
+    outline:none;
+    font-size: 1.2em;
+    background-color: #eee;
+    font-family: 'Raleway', sans-serif;
+}
+
+.name input::placeholder{
+    color:#bbb;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.email{
+    width: 100%;
+    position: relative;
+    margin-bottom:15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.email input{
+    width: 90%;
+    padding:20px;
+    border:none;
+    outline:none;
+    font-size: 1.2em;
+    background-color: #eee;
+    font-family: 'Raleway', sans-serif;
+}
+
+.email input::placeholder{
+    color:#bbb;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.message-box{
+    width: 90%;
+    position: relative;
+    margin-bottom:15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.message-box textarea{
+    width: 100%;
+    padding:20px;
+    border:none;
+    outline:none;
+    font-size: 1.2em;
+    background-color: #eee;
+    resize: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.message-box textarea input::placeholder{
+    color:#bbb;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn_send{
+    width:100%;
+    cursor:pointer;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn_send button{
+    width: 100%;
+    padding:10px;
+    font-size:1.2em;
+    color:black;
+    background-color: #FEBCC8;
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn_send:hover, .btn_close:hover{
+    filter: brightness(90%);    
+}
+
+.btn_close{
+    width: auto;
+    cursor:pointer;
+    margin-top: 8px;
+    margin-left:80px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button_close{
+    height:40px;
+    width: 100%;
+    font-size:1.2em;
+    font-weight: bold;
+    color:#fff;
+    background-color: red;
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button_send{
+    height:40px;
+    width: 100%;
+    font-size:1.2em;
+    font-weight: bold;
+    color:#fff;
+    background-color: red;
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.title-grid{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding:0;
+}
+
+
+.message{
+    width:100%;
+    position:relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.message .success{
+    font-size: 1.5em;
+    color:green;
+    position: absolute;
+    animation: buttons .3s linear;
+    display:none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.message .warning{
+    font-size: 1.5em;
+    color:red;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display:none;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+@keyframes buttons{
+    0%{
+        transform:scale(0,1);
+    }
+    50%{
+        transform:scale(0,5);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+.modal{
+    width:500px;
+    height:600px;
+    position: fixed;
+    padding:0.5em;
+    border-radius: 0.25rem;
+    z-index: 10;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.contact_us{
+    cursor: pointer;
+}
+
+/* Login & Register Dialog CSS */
+.log_in{
+    cursor:pointer;
+}
+
+
+.wrap {
+    position: relative;
+    width: 500px;
+    height: 545px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Radley';
+    overflow: hidden;
+    transform: scale(0);
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrap.active-popup {
+    transform: scale(1);
+}
+
+.wrap.active {
+    height: 600px;
+}
+
+.wrap .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrap .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrap.active .form-box.login {
+    transition: none;
+    transform: translateX(-500px);
+}
+
+.wrap .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(500px);
+}
+
+.wrap.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrap .close {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    height:40px;
+    width: 40px;
+    font-size:1.2em;
+    font-weight: bold;
+    color:#fff;
+    background-color: red;
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-box h3 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    margin:30px 30px 30px 0;
+    
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .3s;
+    
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline:none;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 20px 0 5px;
+    background-color:#eee;
+    
+}
+
+.remember-forgot {
+    font-size: 0.9em;
+    margin: -15px 0 15px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.remember-forgot .forgot-link{
+    font-size: 0.9em;
+    color: black;
+    text-decoration: none;
+    margin-top:-5px;
+}
+
+
+.remember-forgot label input {
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 95%;
+    height: 45px;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    margin-left: -20px;
+}
+
+.login-register {
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0;
+    text-align: center;
+}
+
+.login-register .register-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+    font-size: 0.9em;
+}
+
+.login-register .register-link:hover {
+    text-decoration: underline;
+}
+
+.login-register .login-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display:inline;
+    font-size: 0.9em;
+}
+
+.login-register .login-link:hover{
+    text-decoration: underline;
+}
+
+.register_successful_msg{
+    color:green;
+    display: none;
+    font-weight: bold;
+}
+
+/*log out no display*/
+#logout{
+    display: none;
+    cursor: pointer;
+}
+
+
+/*footer*/
+footer {
+    display: grid;
+    position: relative;
+    background-color: #d4def6;
+    font-family: 'Radley';
+    font-weight: bold;
+    text-align: left;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+footer h3 {
+    font-weight: bold;
+    font-family: 'Radley';
+}
+
+footer p {
+    font-family: 'Radley';
+}
+
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 180px 280px 320px;
+    column-gap: 60px;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.footer-container h3 {
+    position: relative;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.footer_shop {
+    text-align: left;
+    position: relative;
+    border-right: 2px solid black;
+    height: 200px;
+    line-height: 24px;
+}
+
+.footer_shop ul{
+    padding-left: 0;
+}
+.footer_shop li {
+    list-style: none;
+    line-height: 30px;
+}
+
+.footer_shop li a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer_shop li a:hover {
+    color: white;
+}
+
+.contact {
+    position: relative;
+    border-right: 2px solid black;
+    height: 200px;   
+}
+
+.contact ul{
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.contact li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 15px;
+}
+
+.subscribe {
+    height: 200px;
+    text-align: left;
+}
+.subscribe p{
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 0px;
+}
+
+.subscribe input {
+    height: 40px;
+    width: 70%;
+    outline: none;
+    border: 2px solid #797d88;
+    background: #d4def6;
+    border-radius: 10px;
+    padding: 0px 15px;
+    color: black;
+    font-family: 'Radley';
+}
+
+.subscribe input::placeholder{
+    color: #5d6068;
+    font-family: 'Radley';
+}
+
+.copyright {
+    width: auto;
+    background-color: #d4def6;
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    text-align: left;
+}
+
+
+/*for mobile*/
+@media screen and (max-width: 600px){
+    /*header*/
+    .header{
+        height: 130px;
+    }
+    .header_logo{
+        width: 200px;
+        height: 180px;
+    }
+    /*nav*/
+    nav{
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li{
+        display: block;
+        margin-left: 75px;
+        font-size: 0.6em;
+        line-height:0.6em;
+    }
+    h2{
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        line-height: 10px;
+    }
+    .description{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .description > p{
+        font-size: 9px;
+        line-height: 12px;
+    }
+    .container {
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+    }
+    .container > div {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .container > div > a > img{
+        height: 120px;
+        width: 120px;
+    }
+    /*footer*/
+    .footer-container{
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 0.5em;
+        padding-top: 20px;
+        column-gap: 5px;
+        grid-template-columns: repeat(1,100%)
+
+    }
+    .footer-container h3{
+        padding-bottom: 0;
+    }
+    .footer_shop{
+        line-height: 15px;
+        padding-right: 3px;
+        height: 100px;
+        border-bottom: 1.5px solid black;
+        padding-bottom: 10px; 
+        border-right: none;
+    }
+    .footer_shop li{
+        line-height: 20px;
+    }
+    .contact{
+        border-right: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1.5px solid black;
+        height: 80px;
+    }
+    .subscribe{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .icon{
+        width: 15px;
+        height: 15px;
+    }
+    .contact{
+        padding-left: 0px;
+        height: 100px;
+        border-right: transparent;
+    }
+    .contact ul{
+        padding-top: 8px;
+    }
+    .contact li {
+        grid-template-columns: 20px 1fr;
+        margin-bottom: 10px;
+        font-size: 8px;
+    }
+    .subscribe{
+        height: fit-content;
+    }
+    .subscribe p{
+        line-height: normal;
+        font-size: 9px;
+        letter-spacing: normal;
+    }
+    .subscribe input {
+        height: 15px;
+        padding: 0px 15px;
+        border-radius: 5px;
+        border: 1.5px solid #797d88;
+        font-size: 8px;
+    }    
+    .copyright{
+        font-size: 11px;
+    }
+}
+
+/*for tablet*/
+@media screen and (max-width: 1199px) and (min-width: 600px){
+    /*header*/
+    nav a{
+        width: 100px;
+        font-size: 12px;
+    }
+    h2{
+        font-size: 32px;
+        letter-spacing: 2px;
+        line-height: 16px;
+    }
+    .description{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .description > p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .container {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+    .container > div {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .container > div > a > img{
+        height: 200px;
+        width: 200px;
+    }
+    /*footer*/
+    .footer-container{
+        font-size: 0.8em;
+        padding: 0;
+        padding-top: 40px;
+        width: 80%;
+        grid-template-columns: 140px 220px 180px;
+        column-gap: 25px;
+        margin: auto;
+
+    }
+    .footer_shop{
+        line-height: 22px;
+    }
+    .footer-container h3{
+        padding-bottom: 0;
+    }
+    .subscribe p{
+        font-size: 15px;
+    }
+}
