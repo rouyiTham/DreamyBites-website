@@ -6,6 +6,8 @@ An interactive website for a bakery to dynamically display the menu, FAQs, backg
 ## Prototype Building
 The prototype was built using [Figma (see here)](https://www.figma.com/design/UDnjXYUsSat6Rmu6AGTFsR/Dreamy-Bites-Prototype?node-id=0-1&t=8hktcwtW6k9K39bP-1).
 
+## Final Product Demonstration
+
 ### Home Page Demonstration
 ![image](demo_1.gif)
 
